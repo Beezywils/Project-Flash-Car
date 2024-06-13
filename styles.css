@@ -1,0 +1,941 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7rem;
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
+
+    
+
+    
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f9c91f;
+  
+}
+
+.logo span {
+    color: #001330;
+}
+
+
+.btnGroup {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 800px;
+}
+.btnItem {
+    display: flex;
+    gap: 2rem;
+}
+
+.btnItem>a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #001330;
+    font-weight: 500;
+}
+
+.btnItem>a>span {
+    border-bottom: 3px solid #f9c91f;
+}
+.button {
+    display: flex;
+    gap: 3rem;
+ 
+}
+
+
+
+.signIn button, .signUp button {
+    padding: .5rem 1.2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #f9c91f;
+    color: #001330;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.signIn button {
+    border: 1px solid #f9c91f;
+    background-color: transparent;
+   
+}
+
+.signUp button {
+    box-shadow: rgba(37, 44, 97, .15) 0 8px 22px 0, rgba(93, 100, 148, .2) 0 4px 6px 0 inset;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    
+ 
+}
+
+.content-box, .img-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box {
+    background-color: #001330;
+  
+}
+
+.content-section {
+    width: 100%;
+    text-align: left;
+    padding: 1rem 7rem;
+    color: #fff;
+   
+}
+
+.content-section h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.content-section h1 span {
+    color: #f9c91f;
+}
+
+.content-section p {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #979896;
+}
+
+.btn-group {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+ 
+}
+
+.btn-group button {
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #f9c91f;
+    color: #001330;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.book-btn button {
+    box-shadow: rgba(37, 44, 97, .15) 0 8px 22px 0, rgba(93, 100, 148, .2) 0 4px 6px 0 inset;
+}
+
+.become-btn button {
+    color: #fff;
+    border: 1px solid #f9c91f;
+    background-color: transparent;
+}
+
+.img-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.plan-section {
+    padding: 5rem 0;
+    border: 2px;
+    background-color: #fff;
+   
+}
+
+.plan-section h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #001330;
+}
+
+.plan-layout {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8rem;
+    padding: 1rem 5rem;
+   
+
+}
+
+.economy-class, .standard-class, .luxury-class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    max-width: 1200px;
+    height: 450px;
+    margin: 10px 0;
+    gap: 1rem;
+    background-color: #001330;
+
+}
+
+.economy-class img, .standard-class img, .luxury-class img {
+    position: absolute;
+    bottom: -31rem;
+    width: 300px;
+    object-fit: cover;
+}
+
+.plan-content {
+    width: 350px;
+   
+    margin-top: 4rem;
+   
+}
+
+.plan-content h3 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #001330;
+    margin: 20px;
+}
+
+.plan-content p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #979896;
+    margin: 20px;
+}
+
+.plan-content h5 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #001330;
+}
+
+.btn-plan button {
+    padding: 0.6rem 1.5rem;
+    border: 1px solid #f9c91f;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #001330;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.offer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    background-color: #f9c91f;
+   
+}
+
+.offer-content h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #001330;
+    margin-bottom: 2rem;
+  
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+    padding: 1rem 5rem;
+    
+  
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding: 1rem;
+    
+}
+
+.service-card .service-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.service-card .service-icon .icon-map, .service-card .service-icon .icon-map i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.service-card .service-icon .icon-map {
+    width: 40px;
+    height: 40px;
+    background-color: #001330;
+    border-radius: 50%;
+}
+
+.service-card .service-icon .icon-map i {
+    color: #fff;
+    font-size: 16px;
+    /* position: absolute;
+    margin-left: 7px; */
+    
+}
+
+.service-card h3 {
+    font-size: 15.4px;
+    font-weight: 600;
+    color: #001330;
+    margin-right: 8.7rem;
+}
+
+.service-card p {
+    text-align: left;
+    padding: 10px 55px;
+    font-size: 0.9rem;
+    color: #001330;
+    font-weight: 400;
+}
+
+.flash-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -15rem;
+    background-color: #fff;
+}
+
+.flashApp-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 5rem 0;
+}
+
+.left-content h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #001330;
+    margin-bottom: 1rem;
+}
+
+.left-content span {
+    color: #f9c91f;
+}
+
+.left-content p {
+    width: 100%;
+    color: #001330;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.download-app {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.download-app ul {
+    display: flex;
+    list-style: none;
+}
+
+.download-app ul li a img {
+    width: 150px;
+}
+
+.right-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.testimonial-section {
+    position: relative;
+    padding: 4rem 0;
+    background-image: url("images/man.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.testimonial-section::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 19, 48, 0.8);
+    z-index: -1;
+}
+
+.testimonial-section h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 8rem;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+  
+
+}
+
+.testimonial {
+    position: relative;
+    background-color: #fff;
+    color: #001330;
+    padding: 2rem;
+    max-width: 350px;
+    text-align: center;
+}
+
+.testimonial img {
+    position: absolute;
+    top: -60px;
+    left: 27%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 2px solid rgb(250, 251, 250);
+}
+
+.testimonial h3 {
+    margin-top: 5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.testimonial p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #001330c8;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+footer {
+    background-color: #fff;
+    padding: 2rem 0;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 7rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 1rem;
+   
+}
+
+.footer-section h3 {
+    color: #001330;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.footer-section .border {
+    border-bottom: 3px solid #001330;
+    margin-bottom: 2.2rem;
+    margin-top: 2.2rem;
+}
+
+.footer-section p {
+    color: #7a7a7a;
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+
+.socail-icons a {
+    margin-right: 1rem;
+    color: #001330;
+    font-size: 1.2rem;
+}
+
+.socail-icons a img {
+    width: 25px;
+}
+
+.download-links a img {
+    width: 120px;
+    margin-right: 1rem;
+}
+
+.footer-section .fa-phone, .fa-envelope, .fa-location-dot {
+    color: #001330;
+    margin-right: 0.5rem;
+}
+#toggle {
+    display: none;
+
+}
+label {
+    display: none;
+}
+
+
+
+
+@media (max-width: 600px) {
+    header {
+        width: 100%;
+       
+       
+        
+      
+        z-index: 1;
+      
+        
+    
+        
+    }
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+    
+       
+    }
+    label {
+        display: block;
+        font-size: 2rem;
+        margin-left: 9rem;
+        
+    }
+    
+
+
+    
+
+    
+   
+
+    .btnGroup {
+        padding: 1.8rem;
+        display: none;
+        position: absolute;
+        margin-top: 70px;
+      
+        width: 60%;
+        top: 4rem;
+        
+        z-index: 1;
+        background-color: white;
+        opacity: 0.97;
+        border-top: 4px solid   #f9c91f;
+        border-bottom: 4px solid #f9c91f;
+        position: absolute;
+        transform: translate(100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        
+       
+    }
+    .btnItem {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        
+    
+    
+        
+    }
+    .btnItem>a {
+        width: 100%;
+        color: black;
+        font-size: 17px;
+        padding: 0.6rem;
+        text-align: center;
+        border-bottom: 4px solid white;
+    }
+    .button {
+       
+        display: grid;
+        text-align: center;
+        gap: 30px;
+        margin-top: 10px;
+    }
+ 
+    .signIn button, .signUp button {
+
+        font-size: 1rem;
+        
+      
+     
+        cursor: pointer;
+        
+    }
+    #toggle:checked + .btnGroup {
+        display: block;
+        transform: none;
+    }
+
+    .hero-section {
+        display: grid;
+      
+    
+       
+    
+        
+       
+        
+     
+    }
+    
+main {
+    display: grid;
+  
+}
+.content-box {
+  
+    display: grid;
+    
+    
+    
+    
+   
+}
+.content-section {
+   
+   
+    
+  
+    color: #fff;
+   
+    padding-block: 4rem;
+   
+}
+.content-section>h1 {
+    font-size: 1.8rem;
+
+}
+.content-section p {
+
+    font-size: 8.5px;
+    font-weight: normal;
+    color: #979896;
+ 
+}
+
+
+.btn-group button {
+ 
+  
+    padding: .4rem .4rem;
+   
+
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 8.5px;
+}
+.become-btn button {
+    color: #fff;
+    border: 1px solid #f9c91f;
+    background-color: transparent;
+}
+
+    
+    
+   
+    .img-section {
+        display: none;
+    }
+
+.plan-content {
+    width: 300px;
+   
+    margin-bottom: 2rem;
+    
+
+   
+}
+
+
+
+    .plan-layout {
+        display: grid;
+      
+        padding: 1rem 2rem;
+        
+        
+        
+       
+    }
+    .standard-class {
+        display: none;
+    }
+    .luxury-class {
+        display: none;
+    }
+    .economy-class {
+      
+        width: 300px;
+      
+        height: 50vh;
+       
+        margin: 0, 7px;
+      
+        
+       
+        
+        margin: 10px 0;
+        gap: 1rem;
+      
+
+    }
+    
+    .economy-class img{
+        position: absolute;
+        
+        bottom: -26rem;
+        width: 200px;
+     
+      
+    }
+   
+    
+    .plan-section h1 {
+       margin-left: 30px;
+        font-size: 2rem;
+        font-weight: 600;
+        
+        
+       
+    }
+
+    
+    .offer-content h1 {
+     
+        font-size: 1.5rem;
+       
+      
+    
+       
+     
+      
+    }
+
+.services {
+  
+  
+    
+    padding: 1rem 1rem;
+   
+}
+
+
+
+
+
+.service-card .service-icon .icon-map {
+    width: 35px;
+    height: 35px;
+    background-color: #001330;
+    border-radius: 50%;
+   
+ 
+}
+
+.service-card .service-icon .icon-map i {
+    color: #fff;
+    font-size: 15px;
+   
+
+    /* position: absolute;
+    margin-left: 7px; */
+    
+}
+
+.service-card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #001330;
+    margin-right: 8.7rem;
+   
+
+}
+
+.service-card p {
+    text-align: left;
+
+    font-size: 0.9rem;
+    color: #001330;
+    font-weight: 400;
+}
+
+.flash-app {
+    display: grid;
+ 
+    
+   
+   
+   
+}
+.right-content {
+    width: 100%;
+
+    margin: auto;
+ 
+    
+}
+
+
+.left-content h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+   
+    margin-left: 3rem;
+ 
+}
+
+
+.left-content p {
+   
+    color: #001330;
+    font-size: .9rem;
+    width: 80%;
+    
+  
+  
+    
+    margin-left: 3rem;
+}
+.download-app {
+  
+    margin-left: 2.5rem;
+}
+
+
+
+
+
+
+
+  
+.testimonials {
+  
+   display: grid;
+    gap: 8rem;
+   
+}
+
+.testimonial {
+
+  
+   
+    max-width: 350px;
+
+ 
+}
+
+
+.footer-container {
+display: grid;
+
+ 
+    
+    gap: 20px;
+
+}
+
+.footer-section {
+    width: 100%;
+  
+  
+   
+  
+   
+}
+
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
